@@ -1,5 +1,5 @@
 /**
- * nya-bootstrap-select v2.1.3
+ * nya-bootstrap-select v2.1.4-alpha
  * Copyright 2014 Nyasoft
  * Licensed under MIT license
  */
@@ -325,6 +325,7 @@ var nyaBsSelect = angular.module('nya.bootstrap.select', []);
 
 /**
  * A service for configuration. the configuration is shared globally.
+ * Testing ci build --jpmckearin
  */
 nyaBsSelect.provider('nyaBsConfig', function() {
 
