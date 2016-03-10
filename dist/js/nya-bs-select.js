@@ -1,5 +1,5 @@
 /**
- * nya-bootstrap-select v2.1.4-alpha
+ * nya-bootstrap-select v2.1.4-beta
  * Copyright 2014 Nyasoft
  * Licensed under MIT license
  */
@@ -1153,7 +1153,7 @@ nyaBsSelect.directive('nyaBsSelect', ['$parse', '$document', '$timeout', '$compi
 
             // update view value regardless
             ngCtrl.$setViewValue(viewValue);
-            $scope.$digest();
+            $scope.$apply();
 
             updateButtonContent();
           }
@@ -1201,7 +1201,7 @@ nyaBsSelect.directive('nyaBsSelect', ['$parse', '$document', '$timeout', '$compi
           }
           // update view value regardless
           ngCtrl.$setViewValue(viewValue);
-          $scope.$digest();
+          $scope.$apply();
 
           if(!isMultiple) {
             // in single selection mode. close the dropdown menu
